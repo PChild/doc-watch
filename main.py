@@ -66,7 +66,6 @@ def save_file(url, tmp=False):
             out.write(content)
 
 
-
 def save_and_log(url):
     save_file(url)
     name = get_file_name(url)
