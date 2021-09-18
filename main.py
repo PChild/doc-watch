@@ -3,6 +3,7 @@ import hashlib
 import os
 import json
 import diff2HtmlCompare
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 from pdf_diff import command_line as pdf
 from datetime import datetime
@@ -94,9 +95,18 @@ def save_metadata(data):
         json.dump(data, outfile, indent=4)
 
 
+def save_log(message):
+    date_string = datetime.today().strftime('%Y-%m-%d')
+    if not os.path.exists(LOG_STORE):
+        os.makedirs(LOG_STORE)
+    log_file = LOG_STORE + date_string + '.txt'
+    with open(log_file, 'w') as out:
+        out.write(message)
+
+
 def get_date_folder():
     date_string = datetime.today().strftime('%Y-%m-%d')
-    folder_name = '../' + date_string + '/'
+    folder_name = date_string + '/'
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     return folder_name
@@ -119,7 +129,7 @@ def process_data_file(url, old_hash):
     if new_hash != old_hash:
         # Hashes don't match, something changed so keep the file and diff
         day_folder = get_date_folder()
-        old_file = day_folder + filename
+        old_file = 'old/' + day_folder + filename
         current_file = FILE_STORE + filename
 
         # Move the old file copy into the archive for today, move the new copy into the store
@@ -163,8 +173,9 @@ def diff_html(old_file, new_file):
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 SHEET_ID = '1PWxwiKkbzossw06pUPkmJMkLj9r1dRJ0v2GQ_1cITzQ'
 DATA_RANGE = 'Data!A2:A'
-FILE_STORE = './store/'
-SITE_STORE = './out/'
+FILE_STORE = 'store/'
+SITE_STORE = 'out/'
+LOG_STORE = 'logs/'
 EPOCH = 'Thu, 01 Jan 1970 00:00:00 GMT'
 META_FILE = 'status.json'
 
@@ -175,48 +186,61 @@ def main():
 
     metadata = read_metadata()
     meta_changed = False
+    log_text = ''
 
-    for url in urls:
+    for url in tqdm(urls):
         possible_change = False
 
         filename = get_file_name(url)
-        modified = get_last_modified(url)
 
-        if filename not in metadata:
-            # New file that hasn't been processed before, add it to metadata
-            metadata[filename] = save_and_log(url)
-            meta_changed = True
+        # Try / except to catch possible 404s or other issues.
+        try:
+            modified = get_last_modified(url)
 
-        elif modified == EPOCH:
-            # Bad last-modified date, check via hashes
-            possible_change = True
-
-        elif modified == metadata[filename]['modified']:
-            # File hasn't been modified since last checked, skip it.
-            pass
-
-        else:
-            # last-modified has changed
-            metadata[filename]['modified'] = modified
-            meta_changed = True
-            possible_change = True
-
-        # In all cases where there might be a file change download the file and check the hash. If there is a
-        # change then move the old file into an archive and move the new file into the store.
-        if possible_change:
-            old_hash = metadata[filename]['hash']
-            new_hash = process_data_file(url, old_hash)
-
-            if new_hash != old_hash:
-                print("Updated: " + filename)
-                metadata[filename]['hash'] = new_hash
+            if filename not in metadata:
+                # New file that hasn't been processed before, add it to metadata
+                metadata[filename] = save_and_log(url)
+                print('Added:' + filename)
+                log_text += 'Added: ' + filename + '\n'
                 meta_changed = True
+
+            elif modified == EPOCH:
+                # Bad last-modified date, check via hashes
+                possible_change = True
+
+            elif modified == metadata[filename]['modified']:
+                # File hasn't been modified since last checked, skip it.
+                pass
+
+            else:
+                # last-modified has changed
+                metadata[filename]['modified'] = modified
+                meta_changed = True
+                possible_change = True
+
+            # In all cases where there might be a file change download the file and check the hash. If there is a
+            # change then move the old file into an archive and move the new file into the store.
+            if possible_change:
+                old_hash = metadata[filename]['hash']
+                new_hash = process_data_file(url, old_hash)
+
+                if new_hash != old_hash:
+                    print("Updated: " + filename)
+                    log_text += 'Change: ' + filename + '\n'
+                    metadata[filename]['hash'] = new_hash
+                    meta_changed = True
+        except:
+            log_text += '### ERROR: ' + filename.upper()
+            pass
 
     # only write metadata if there has been at least one change.
     if meta_changed:
         save_metadata(metadata)
     else:
+        log_text += 'No changes detected. \n'
         print("No changes detected.")
+
+    save_log(log_text)
 
 
 if __name__ == '__main__':

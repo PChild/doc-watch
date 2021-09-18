@@ -1,22 +1,22 @@
 {
     "payment-terms.html": {
-        "modified": "Sat, 18 Sep 2021 02:37:13 GMT",
+        "modified": "Sat, 18 Sep 2021 19:47:11 GMT",
         "hash": "be2074df12af87cd974e5463d373222a"
     },
     "sales-tax-information.html": {
-        "modified": "Sat, 18 Sep 2021 02:02:32 GMT",
+        "modified": "Sat, 18 Sep 2021 18:45:54 GMT",
         "hash": "3d6007bb8c17981386b880817911de86"
     },
     "championship-eligibility-criteria.html": {
-        "modified": "Sat, 18 Sep 2021 00:05:34 GMT",
+        "modified": "Sat, 18 Sep 2021 22:06:48 GMT",
         "hash": "f81487caf1592894ccce8b2d95ea18b5"
     },
     "off-season-events.html": {
-        "modified": "Sat, 18 Sep 2021 02:19:30 GMT",
+        "modified": "Sat, 18 Sep 2021 17:02:51 GMT",
         "hash": "705bd32cbfb6f16dc9c0b0402b625887"
     },
     "off-season-guidance-resources.html": {
-        "modified": "Sat, 18 Sep 2021 02:35:11 GMT",
+        "modified": "Sat, 18 Sep 2021 22:10:02 GMT",
         "hash": "3ae133f6e5bcadc3d5cce84f35857fe2"
     },
     "2021%20Off%20Season%20Criteria%20and%20Considerations.pdf": {
@@ -30,5 +30,325 @@
     "EventRulesManual.pdf": {
         "modified": "Fri, 10 Jan 2020 23:15:48 GMT",
         "hash": "da0c3b5459cd248d4ebecd2d3f9ecc80"
+    },
+    "code-of-conduct.html": {
+        "modified": "Sat, 18 Sep 2021 21:37:50 GMT",
+        "hash": "6b05ec148d1110c0dea47909c8db0df3"
+    },
+    "vision-and-mission.html": {
+        "modified": "Sat, 18 Sep 2021 17:26:54 GMT",
+        "hash": "0006564871cbd5fbdc5982f7e37fd1c2"
+    },
+    "covid-19.html": {
+        "modified": "Sat, 18 Sep 2021 21:42:41 GMT",
+        "hash": "3d00e27fb52abdcae137095fdc5ab7b3"
+    },
+    "ambassador.html": {
+        "modified": "Sat, 18 Sep 2021 21:54:21 GMT",
+        "hash": "f9c25b28160eda10f391285f97c9ca4d"
+    },
+    "ambassador-coordinator.html": {
+        "modified": "Sat, 18 Sep 2021 21:54:19 GMT",
+        "hash": "8f6b6a092462f8b4942b2879cf4c598b"
+    },
+    "audio-visual-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 22:24:21 GMT",
+        "hash": "3cf8bf790a1d461eb468144c211b5823"
+    },
+    "awards-based-on-machine-creativity-innovation.html": {
+        "modified": "Sat, 18 Sep 2021 20:56:16 GMT",
+        "hash": "0fd4d55bb141b6a637f179080ca4bc36"
+    },
+    "awards-based-on-team-attributes.html": {
+        "modified": "Sat, 18 Sep 2021 21:14:32 GMT",
+        "hash": "46a603c51f6a1fe0fc94aa6bfbce053e"
+    },
+    "control-system-advisor.html": {
+        "modified": "Sat, 18 Sep 2021 17:58:32 GMT",
+        "hash": "0f202cb05f3705fb9e176b35abf615ce"
+    },
+    "deans-list-award-resources.html": {
+        "modified": "Sat, 18 Sep 2021 18:49:01 GMT",
+        "hash": "5c0e92e51fd4d02471536f82f087ce52"
+    },
+    "deans-list-winners.html": {
+        "modified": "Sat, 18 Sep 2021 17:21:43 GMT",
+        "hash": "f6b793e387460f31c6ec967a1d3a544f"
+    },
+    "event-manager.html": {
+        "modified": "Sat, 18 Sep 2021 16:50:58 GMT",
+        "hash": "980fe40e8091e40ce1f076723fdbe02e"
+    },
+    "event-photographer.html": {
+        "modified": "Sat, 18 Sep 2021 22:09:13 GMT",
+        "hash": "67602e0565904722b501ba5da1a90989"
+    },
+    "field-assembly-and-disassembly.html": {
+        "modified": "Sat, 18 Sep 2021 21:54:19 GMT",
+        "hash": "5a1f85f3294998496d4ab637a8b49886"
+    },
+    "field-repair-reset.html": {
+        "modified": "Sat, 18 Sep 2021 21:52:56 GMT",
+        "hash": "df8791a771e83b909a0accaa02cf58d5"
+    },
+    "field-supervisor.html": {
+        "modified": "Sat, 18 Sep 2021 21:40:58 GMT",
+        "hash": "308394c3f1352f545f06a852a52f7035"
+    },
+    "game-announcer.html": {
+        "modified": "Sat, 18 Sep 2021 18:37:05 GMT",
+        "hash": "3a098d35cd9b8aae0002122ea8a2defe"
+    },
+    "head-referee.html": {
+        "modified": "Sat, 18 Sep 2021 21:43:32 GMT",
+        "hash": "f301b4353922a08fa42b3513f1010d28"
+    },
+    "inspection-manager.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:47 GMT",
+        "hash": "9963f42293644f27eb33130bf3f2e39c"
+    },
+    "judge.html": {
+        "modified": "Sat, 18 Sep 2021 21:52:55 GMT",
+        "hash": "6b597f9c663741178019f52be02e45f9"
+    },
+    "judge-advisor.html": {
+        "modified": "Sat, 18 Sep 2021 17:30:27 GMT",
+        "hash": "0075ad6b1ee8da36305d382cccc8137e"
+    },
+    "judge-assistant.html": {
+        "modified": "Sat, 18 Sep 2021 21:40:55 GMT",
+        "hash": "4ae91ec4c537f73c4a00be8369e03815"
+    },
+    "lead-robot-inspector.html": {
+        "modified": "Sat, 18 Sep 2021 21:52:53 GMT",
+        "hash": "bed410fbe14fac2a82a85b607bb2d41a"
+    },
+    "lead-team-queuer.html": {
+        "modified": "Sat, 18 Sep 2021 21:52:46 GMT",
+        "hash": "412a71ebc1b17320ccbcd472adccda84"
+    },
+    "machine-shop-staff.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:50 GMT",
+        "hash": "0b3cc352265874ee29942e6951d6a3d3"
+    },
+    "master-of-ceremonies.html": {
+        "modified": "Sat, 18 Sep 2021 21:45:58 GMT",
+        "hash": "f872da3bcd7e5f3804876c25147abffa"
+    },
+    "past-winners-of-the-chairmans-award.html": {
+        "modified": "Sat, 18 Sep 2021 18:48:56 GMT",
+        "hash": "388f39443dce45cc775f61e9b99e2770"
+    },
+    "pit-administration-supervisor.html": {
+        "modified": "Sat, 18 Sep 2021 21:40:57 GMT",
+        "hash": "4ee39cd76bb29b2ba024d9f8f4231370"
+    },
+    "pit-administration-support.html": {
+        "modified": "Sat, 18 Sep 2021 19:44:17 GMT",
+        "hash": "2ef355914c0d04f5c63c9df3c94a6f2f"
+    },
+    "pit-announcer.html": {
+        "modified": "Sat, 18 Sep 2021 21:43:36 GMT",
+        "hash": "9bd891e04f10a057903a186380d9fba7"
+    },
+    "practice-field-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:43:34 GMT",
+        "hash": "65417a9dfa3d43f88390e367e5416874"
+    },
+    "quiet-room-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:52:47 GMT",
+        "hash": "a301c00f34a7cc6f71068e66c593933b"
+    },
+    "referee.html": {
+        "modified": "Sat, 18 Sep 2021 21:10:26 GMT",
+        "hash": "20320e8fde23da67d66bb2573ee73ba6"
+    },
+    "robot-inspector.html": {
+        "modified": "Sat, 18 Sep 2021 17:59:13 GMT",
+        "hash": "114338d73e2625d8dd801a95b7b87ffe"
+    },
+    "robot-transportation.html": {
+        "modified": "Sat, 18 Sep 2021 17:19:49 GMT",
+        "hash": "ddf2d9b44a7ce61ac6f8be151beb7632"
+    },
+    "rookie-team-criteria.html": {
+        "modified": "Sat, 18 Sep 2021 20:29:43 GMT",
+        "hash": "f9b77f3bcc9fd31872e66052c48419ec"
+    },
+    "safety-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:44 GMT",
+        "hash": "fe753285cda0d0580307521c53e94da5"
+    },
+    "safety-manager.html": {
+        "modified": "Sat, 18 Sep 2021 17:17:18 GMT",
+        "hash": "b1b573a3a65d055ad8c45230dfdd569f"
+    },
+    "scorekeeper.html": {
+        "modified": "Sat, 18 Sep 2021 21:45:52 GMT",
+        "hash": "dfc7d1371b15d63f87ea6220ff80410d"
+    },
+    "spare-parts-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:45 GMT",
+        "hash": "87e1f70c8d56638db03363b5e138ef0f"
+    },
+    "submitted-awards.html": {
+        "modified": "Sat, 18 Sep 2021 18:53:04 GMT",
+        "hash": "d7ed8adab576a620b6b9bbb3835f9de7"
+    },
+    "surrogate-kit-pick-up-information.html": {
+        "modified": "Sat, 18 Sep 2021 21:54:23 GMT",
+        "hash": "0e831041b2b9a7dd6738be4bb0630dde"
+    },
+    "team-load-in-out-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:43 GMT",
+        "hash": "50cf10bcdd898cda2e46f4d8242aceb7"
+    },
+    "team-queuing.html": {
+        "modified": "Sat, 18 Sep 2021 21:50:39 GMT",
+        "hash": "33f135dcb556532de54b1db9c06fe2ce"
+    },
+    "technical-advisor.html": {
+        "modified": "Sat, 18 Sep 2021 21:25:24 GMT",
+        "hash": "95ff9e84303f0f7f60e452b600043278"
+    },
+    "technical-advisor-assistant.html": {
+        "modified": "Sat, 18 Sep 2021 22:24:40 GMT",
+        "hash": "cd6940510d13d8d41c2cb528e2c92421"
+    },
+    "volunteer-coordinator.html": {
+        "modified": "Sat, 18 Sep 2021 21:30:31 GMT",
+        "hash": "3826b4a1e4fece1ddc8fd710211ceec4"
+    },
+    "volunteer-event-roles-and-training-resources.html": {
+        "modified": "Sat, 18 Sep 2021 18:31:37 GMT",
+        "hash": "5261679a1ea0525a926b0aa6e3ec8354"
+    },
+    "volunteer-lounge-monitor.html": {
+        "modified": "Sat, 18 Sep 2021 21:30:32 GMT",
+        "hash": "f6ad4dc597052764171a98e950233c7a"
+    },
+    "volunteer-registration-assistant.html": {
+        "modified": "Sat, 18 Sep 2021 17:20:09 GMT",
+        "hash": "cc5cd9eea734a66ca7536897548a216a"
+    },
+    "webcast-operator.html": {
+        "modified": "Sat, 18 Sep 2021 21:41:00 GMT",
+        "hash": "aa800c19847df999a5a2e6f76eb178b6"
+    },
+    "welcome-alumni-attendant.html": {
+        "modified": "Sat, 18 Sep 2021 21:45:46 GMT",
+        "hash": "9e7fbf062ac45a9570ba1528cc57d07a"
+    },
+    "2022-payment-faq.html": {
+        "modified": "Sat, 18 Sep 2021 19:31:20 GMT",
+        "hash": "eacd7b50c429382d018fe53d2c06e4dd"
+    },
+    "2022-rookie-team-criteria-deadlines.pdf": {
+        "modified": "Tue, 27 Apr 2021 15:38:22 GMT",
+        "hash": "b0b02e1c75651b4870a0dae15bc3f76b"
+    },
+    "FRC-2022-Combines-Separations-Rules.pdf": {
+        "modified": "Tue, 27 Apr 2021 15:38:22 GMT",
+        "hash": "a77b580e2e5a0afd9aea0329a8bf4bff"
+    },
+    "event-prefencing-faq.pdf": {
+        "modified": "Mon, 16 Sep 2019 21:57:47 GMT",
+        "hash": "628eb7eaab160a45bd341ec969e757e1"
+    },
+    "appendix-1-venue-site-selection.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "da43c83cf626a19e37826d914a4d4c1a"
+    },
+    "district-planning-guide-final.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "033d1868407ebd0b533244a2d0aed691"
+    },
+    "quiet-room-expanded-guide.pdf": {
+        "modified": "Wed, 26 Feb 2020 15:38:27 GMT",
+        "hash": "4a94dbfa626581314c3d7e4743b92f18"
+    },
+    "rpg-section-06-staffing-the-event.pdf": {
+        "modified": "Tue, 03 Sep 2019 14:48:41 GMT",
+        "hash": "9d34d703b45af1d5048983214cfef251"
+    },
+    "rpg-section-07-judges.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "eed2d35dea4bee1e454c62c6a8187fc0"
+    },
+    "rpg-section-10-media-public-relations.pdf": {
+        "modified": "Tue, 28 Jan 2020 15:24:44 GMT",
+        "hash": "81f21a1439f31d45f9b4129bacd5d7ef"
+    },
+    "rpg-section-11-quality-standards.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "62f581c58113db150ae29189e37bf876"
+    },
+    "rpg-section-12-volunteer-recognition.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "8a4da9052d1dba03a8779728f84f475d"
+    },
+    "rpg-section-13-forms.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "0b14aa2d4b4b1397eea12efd57ed17e8"
+    },
+    "rpg-section-16-local-kickoffs.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "688a9519b70b7a390ed2d970d613d6b1"
+    },
+    "2021%20FRC-FTC%20Safety%20Manual.pdf": {
+        "modified": "Fri, 04 Dec 2020 14:07:42 GMT",
+        "hash": "c07a83c2ed07fa4e0a95bd5ea6817377"
+    },
+    "conflict-of-interest-and-disclosure-statement.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "95dc309c7defb42598c7f358a5039f60"
+    },
+    "FIRST-Walk-On-Event-Volunteer-Policy-and-Application-Form.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "d41861171ba24c7dcb56e3378e22433c"
+    },
+    "frc-alliance-selection-script.pdf": {
+        "modified": "Thu, 23 Jan 2020 15:53:14 GMT",
+        "hash": "4990228e801ba24f6b2b1b4c6d747e2e"
+    },
+    "frc-finals-handshake-procedure-2020.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "1dea6ba5173e93ee5f815066bc3543bf"
+    },
+    "frc-ga-training.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "40b4100ae334968a7d1d94d7fab46e66"
+    },
+    "frc-inspection-manager-best-practices.pdf": {
+        "modified": "Thu, 12 Aug 2021 18:20:00 GMT",
+        "hash": "5dd96c83f23bdd703807456a83599b40"
+    },
+    "frc-mc-training.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "98026fba9b62b6b3bf1077b3d248e23e"
+    },
+    "frc-regional-district-award-order.pdf": {
+        "modified": "Thu, 23 Jan 2020 15:58:08 GMT",
+        "hash": "4950d4ab4120cb6a1aa40eed661dd52f"
+    },
+    "frc-team-load-in-out-best-practices.pdf": {
+        "modified": "Thu, 12 Aug 2021 18:00:25 GMT",
+        "hash": "1e41ee86a31cb804bd512b9eea3c2292"
+    },
+    "frc-volunteer-paths-non-technical.pdf": {
+        "modified": "Tue, 01 Jun 2021 15:39:07 GMT",
+        "hash": "9e0b0c8c52d484d2715cc0c72284fe05"
+    },
+    "frc-volunteer-paths-technical.pdf": {
+        "modified": "Tue, 01 Jun 2021 15:32:15 GMT",
+        "hash": "97141b159ee67b3dd139adad37b03cf9"
+    },
+    "safety-glass-station-guidelines.pdf": {
+        "modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "hash": "2bfc3258c88c4e612e5226406d4c80fb"
+    },
+    "volunteer-rights-and-responsibilities.pdf": {
+        "modified": "Wed, 26 Jul 2017 19:52:19 GMT",
+        "hash": "1db56525cae83360fbbff53d735dcb57"
     }
 }
