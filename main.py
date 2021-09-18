@@ -177,8 +177,6 @@ def main():
     metadata = read_metadata()
     meta_changed = False
 
-    diff_html('./store/championship-eligibility-criteria.html', 'championship-eligibility-criteria.html')
-
     for url in urls:
         possible_change = False
 
@@ -211,12 +209,15 @@ def main():
             new_hash = process_data_file(url, old_hash)
 
             if new_hash != old_hash:
+                print("Updated: " + filename)
                 metadata[filename]['hash'] = new_hash
                 meta_changed = True
 
     # only write metadata if there has been at least one change.
     if meta_changed:
         save_metadata(metadata)
+    else:
+        print("No changes detected.")
 
 
 if __name__ == '__main__':
