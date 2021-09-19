@@ -130,7 +130,7 @@ def process_data_file(url, old_hash):
     if new_hash != old_hash:
         # Hashes don't match, something changed so keep the file and diff
         day_folder = get_date_folder()
-        old_file = 'old/' + day_folder + filename
+        old_file = day_folder + filename
         current_file = FILE_STORE + filename
 
         # Move the old file copy into the archive for today, move the new copy into the store
@@ -161,6 +161,7 @@ def diff_html(old_file, new_file):
     folder = get_item_folder(new_file)
     date_string = datetime.today().strftime('%Y-%m-%d')
     full_out = folder + date_string + '.html'
+
     class C:
         pass
     c = C()
@@ -188,6 +189,11 @@ def upload_diffs():
         ret = '### ERROR: GIT FAILED \n'
 
     return ret
+
+
+def print_and_log(data):
+    print(data)
+    return data
 
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
@@ -221,8 +227,7 @@ def main():
             if filename not in metadata:
                 # New file that hasn't been processed before, add it to metadata
                 metadata[filename] = save_and_log(url)
-                print('Added:' + filename)
-                log_text += 'Added: ' + filename + '\n'
+                log_text += print_and_log('Added: ' + filename + '\n')
                 meta_changed = True
 
             elif modified == EPOCH:
@@ -246,27 +251,24 @@ def main():
                 new_hash = process_data_file(url, old_hash)
 
                 if new_hash != old_hash:
-                    print("Updated: " + filename)
-                    log_text += 'Change: ' + filename + '\n'
+                    log_text += print_and_log('Change: ' + filename + '\n')
                     metadata[filename]['hash'] = new_hash
                     meta_changed = True
                     files_changed = True
-        except:
-            log_text += '### ERROR: ' + filename.upper()
+        except Exception as e:
+            log_text += print_and_log('### ERROR: ' + filename.upper() + ':    ' + str(e) + '\n')
             pass
 
     # only write metadata if there has been at least one change.
     if meta_changed:
         save_metadata(metadata)
     else:
-        log_text += 'No metadata changes detected. \n'
-        print("No metadata changes detected.")
+        log_text += print_and_log('No metadata changes detected. \n')
 
     if files_changed:
-        log_text += upload_diffs()
+        log_text += print_and_log(upload_diffs())
     else:
-        log_text += 'No data file changes detected. \n'
-        print("No data file changes detected.")
+        log_text += print_and_log('No data file changes detected. \n')
 
     save_log(log_text)
 
