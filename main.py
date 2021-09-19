@@ -1,6 +1,7 @@
 import requests
 import hashlib
 import os
+import git
 import json
 import diff2HtmlCompare
 from tqdm import tqdm
@@ -170,6 +171,25 @@ def diff_html(old_file, new_file):
     diff2HtmlCompare.main(old_file, new_file, full_out, c)
 
 
+def upload_diffs():
+    ret = 'Git: Successfully pushed. \n'
+    try:
+        repo = git.Repo('.')
+        for file in repo.untracked_files:
+            if file.split('/')[0] == 'out':
+                repo.git.add(file)
+        repo.git.add(update=True)
+        date_string = datetime.today().strftime('%Y-%m-%d')
+        message = 'Changes from ' + date_string
+        repo.git.commit(m=message)
+        origin = repo.remote(name='origin')
+        origin.push()
+    except:
+        ret = '### ERROR: GIT FAILED \n'
+
+    return ret
+
+
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 SHEET_ID = '1PWxwiKkbzossw06pUPkmJMkLj9r1dRJ0v2GQ_1cITzQ'
 DATA_RANGE = 'Data!A2:A'
@@ -186,6 +206,7 @@ def main():
 
     metadata = read_metadata()
     meta_changed = False
+    files_changed = False
     log_text = ''
 
     for url in tqdm(urls):
@@ -229,6 +250,7 @@ def main():
                     log_text += 'Change: ' + filename + '\n'
                     metadata[filename]['hash'] = new_hash
                     meta_changed = True
+                    files_changed = True
         except:
             log_text += '### ERROR: ' + filename.upper()
             pass
@@ -239,6 +261,9 @@ def main():
     else:
         log_text += 'No changes detected. \n'
         print("No changes detected.")
+
+    if files_changed:
+        log_text += upload_diffs()
 
     save_log(log_text)
 
