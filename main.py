@@ -259,11 +259,14 @@ def main():
     if meta_changed:
         save_metadata(metadata)
     else:
-        log_text += 'No changes detected. \n'
-        print("No changes detected.")
+        log_text += 'No metadata changes detected. \n'
+        print("No metadata changes detected.")
 
     if files_changed:
         log_text += upload_diffs()
+    else:
+        log_text += 'No data file changes detected. \n'
+        print("No data file changes detected.")
 
     save_log(log_text)
 
